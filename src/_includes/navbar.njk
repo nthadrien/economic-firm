@@ -1,0 +1,31 @@
+{% set activePage = page.url %}
+
+<nav aria-label="Primary" class='p-container'>
+
+    <button id="hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/>
+        </svg>
+    </button>
+
+    <p class='logo'>
+        <i>Logo</i>
+    </p>
+
+    <div class='nav-links'>
+        {% for item in navigation[page.lang] %}
+        <a href="{{ item.url }}">{{ item.text }}</a>
+        {% endfor %}
+    </div>
+
+    <div>
+        <a href="{{ page.url }}" lang="{{ page.lang }}" hreflang="{{ page.lang }}">
+            {{ page.lang | capitalize }}
+        </a> |
+
+        {% for link in page.url | locale_links %}
+        <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">
+            {{ link.lang | capitalize }}</a>
+        {% endfor %}
+    </div>
+</nav>
