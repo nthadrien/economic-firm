@@ -1,0 +1,22 @@
+---
+layout: "base.njk"
+---
+
+<header class="p-container services">
+    <section>
+        <h1>{{ title }}</h1>
+        <p>{{ bref }} </p>
+
+        <button>
+            contact us
+        </button>
+    </section>
+</header>
+
+<main class="p-container">
+    {{ content | safe }}
+</main>
+
+<style>
+    header { background: black url({{ picture }}); }
+</style>

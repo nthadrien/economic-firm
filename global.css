@@ -20,8 +20,8 @@
 body {
     font-family: sans-serif;
     width: 100%;
-    font-size: 13px;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 1.7;
 }
 
 header {
@@ -32,8 +32,28 @@ header {
     padding: 3%;
     min-height: 80vh;
     background-blend-mode: darken;
+    background-size: cover;
     color: antiquewhite;
     padding-top: 70px;
+}
+
+header section {
+    font-size: 1.6em;
+}
+
+header.home {
+    background: #1d0a0acb url('../assets/home.jpg') no-repeat center;
+    background-size: cover;
+}
+
+header.about {
+    background: #1d0a0acb url('../assets/about.jpg') no-repeat center;
+    background-size: cover;
+}
+
+header.services {
+    background: #1d0a0acb url('../assets/services.jpg') no-repeat center;
+    background-size: cover;
 }
 
 nav {
@@ -68,7 +88,7 @@ footer {
     color: var(--txt-l-clr);
 }
 
-button {
+button, .href-btn {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -82,9 +102,9 @@ button {
     width: fit-content;
 }
 
-button:hover {
+button:hover, .href-btn:hover {
     background: var(--hvr-clr, red);
-    outline: 1px solid darkblue;
+    color: antiquewhite;
 }
 
 a {
@@ -110,6 +130,10 @@ a::after {
 
 a:hover::after {
     width: 80%;
+}
+
+.href-btn::after {
+    display: none;
 }
 
 h1 {
@@ -172,10 +196,68 @@ h1::after {
     transform: translateX(0);
 }
 
+.l-f {
+    color: var(--sup-clr);
+}
+
+.l-f::first-letter {
+    color: var(--brd-clr);
+    font-weight: 600;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.accordion h3 {
+    border-bottom: 1px solid #892be24b;
+    cursor: pointer;
+}
+
+.accordion p {
+    overflow: hidden;
+    max-height: 0;
+}
+
+.accordion:hover h3 {
+    color: var(--hvr-clr);
+}
+
+.accordion:hover p {
+    max-height: 20vh;
+}
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 270px));
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.card-hero {
+    background: var(--hvy-clr, red);
+    height: 120px;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 190px;
+    padding: 1em;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+}
+
 @media (min-width: 768px) {
 
     body {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     footer {
@@ -186,7 +268,9 @@ h1::after {
     #hamburger {
         display: none;
     }
-    .nav-links, .show {
+
+    .nav-links,
+    .show {
         flex-direction: row;
         position: relative;
         background: transparent;
