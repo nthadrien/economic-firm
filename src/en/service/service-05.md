@@ -1,6 +1,7 @@
 ---
 title: Risk Assessment and Mitigation.
 bref: Every business venture involves risks, and it's essential to identify and mitigate them effectively.
+permalink: /en/service/risk-assessment.html
 ---
 
 # Risk Assessment and Mitigation

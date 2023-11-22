@@ -41,21 +41,6 @@ header section {
     font-size: 1.6em;
 }
 
-header.home {
-    background: #1d0a0acb url('../assets/home.jpg') no-repeat center;
-    background-size: cover;
-}
-
-header.about {
-    background: #1d0a0acb url('../assets/about.jpg') no-repeat center;
-    background-size: cover;
-}
-
-header.services {
-    background: #1d0a0acb url('../assets/services.jpg') no-repeat center;
-    background-size: cover;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -88,7 +73,8 @@ footer {
     color: var(--txt-l-clr);
 }
 
-button, .href-btn {
+button,
+.href-btn {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -102,7 +88,8 @@ button, .href-btn {
     width: fit-content;
 }
 
-button:hover, .href-btn:hover {
+button:hover,
+.href-btn:hover {
     background: var(--hvr-clr, red);
     color: antiquewhite;
 }

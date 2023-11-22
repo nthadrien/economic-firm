@@ -1,6 +1,7 @@
 ---
 title: Business Plan Development
 bref: We assist businesses in developing well-structured and comprehensive business plans.
+permalink: /en/service/business-plan-development.html
 ---
 
 # {{ title }}

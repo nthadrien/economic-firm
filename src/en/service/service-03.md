@@ -1,6 +1,7 @@
 ---
 title: Market Research and Analysis
 bref: Understanding your target market is essential for success.
+permalink: /en/service/merket-research.html
 ---
 
 # {{ title }}

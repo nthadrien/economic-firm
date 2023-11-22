@@ -1,6 +1,7 @@
 ---
 title: Strategic Consulting.
 bref: Experienced consultants provide expert guidance on various aspects of your business.
+permalink: /en/service/strategic-consulting.html
 ---
 
 # {{ title }}

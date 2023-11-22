@@ -1,15 +1,13 @@
+--- 
+layout: base.njk
+css: ../../global.css
 ---
-layout: "base.njk"
----
-
-<header class="p-container services">
+<header>
     <section>
         <h1>{{ title }}</h1>
-        <p>{{ bref }} </p>
-
-        <button>
-            contact us
-        </button>
+        <p>
+            {{ description }}
+        </p>
     </section>
 </header>
 
@@ -18,5 +16,7 @@ layout: "base.njk"
 </main>
 
 <style>
-    header { background: black url({{ picture }}); }
+    header {
+        background: black url("../assets/home.jpg");
+    }
 </style>

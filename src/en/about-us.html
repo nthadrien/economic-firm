@@ -2,10 +2,11 @@
 title : About Us
 description: Are you interested in what plus value we can add to your investments and who we are?
 permalink: /en/about-us.html
+css: ../global.css
 ---
 <header class='p-container about'>
     <section>
-        <h1>{{ pic }}</h1>
+        <h1>{{ title }}</h1>
         <p>
             {{ description }}
         </p>
@@ -106,9 +107,7 @@ permalink: /en/about-us.html
 </main>
 
 <style>
-    h1,h2 {
-        align-self: center;
-        text-align: center;
-    }
+    header {background: #1d0a0acb url('../assets/about.jpg') no-repeat center;background-size: cover;}
+    h1,h2 {align-self: center;  text-align: center;}
 </style>
 
