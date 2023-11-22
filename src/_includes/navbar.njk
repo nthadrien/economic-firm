@@ -14,17 +14,17 @@
 
     <div class='nav-links'>
         {% for item in navigation[page.lang] %}
-        <a href="{{ item.url }}">{{ item.text }}</a>
+        <a href="{{ item.url | url }}">{{ item.text }}</a>
         {% endfor %}
     </div>
 
     <div>
-        <a href="{{ page.url }}" lang="{{ page.lang }}" hreflang="{{ page.lang }}">
+        <a href="{{ page.url|url }}" lang="{{ page.lang }}" hreflang="{{ page.lang }}">
             {{ page.lang | capitalize }}
         </a> |
 
         {% for link in page.url | locale_links %}
-        <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">
+        <a href="{{ link.url | url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">
             {{ link.lang | capitalize }}</a>
         {% endfor %}
     </div>
