@@ -8,3 +8,7 @@ btn.addEventListener('click', () => {
     nav.classList.toggle('show');
     btn.classList.toggle('open');
 });
+
+function showIt ( e ) {
+    console.log(e.target)
+};

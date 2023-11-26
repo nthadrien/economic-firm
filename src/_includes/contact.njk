@@ -1,0 +1,22 @@
+
+<section class="p-container">
+    <form>
+        <h3>Contact</h3>
+        <label>
+            email
+            <input type="email" name="email" placeholder="buz-mail-example@box.com" required="required"/>
+        </label>
+
+        <label>
+            message
+            <textarea style="padding: 5px 10px;" placeholder="Hi, we...." name="message" id="" cols="20" rows="2" required="required"></label>
+
+            <button type="submit">
+                {%- if page.lang === 'en' -%}
+                    Send Mail
+                {%- else -%}
+                    Evoyer le Mail
+                {%- endif -%}
+            </button>
+        </form>
+</section>

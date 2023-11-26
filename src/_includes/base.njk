@@ -10,9 +10,10 @@
 </head>
 
 <body>
-    {% include "navbar.njk" %}
+    {%- include "navbar.njk" -%}
     {{ content | safe }}
-    {% include "footer.njk" %}
+    {%- include "contact.njk"-%}
+    {%- include "footer.njk" -%}
     <script src="{{ js | url  }}"></script>
 </body>
 
