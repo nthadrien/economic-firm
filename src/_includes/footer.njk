@@ -1,15 +1,11 @@
-<hr>
-
 <footer class="p-container foot">
 
     <section class='bp'>
-        <h1>
-            <i>~Logo~</i>
-        </h1>
         <h2>Business Plan Cm</h2>
         <p>Cameroun, Yaounde: Nklobisson Entree Marcher</p>
         <p class="social">
             {%- if page.lang === 'en' -%}
+                We would be delighted to assist you witwh any inquiries or feedback you may have.
                 You can follow us on:
             {%- else -%}
                 Vous pouvez nous suivre sur:
@@ -31,7 +27,7 @@
     </section>
 
     <section class="foot-section">
-        <h3>Nos Services</h3>
+        <h3>Services</h3>
         {%- for item in collections.service -%}
             <a href="{{ item.url }}">
                 {{ item.data.title }}</a>

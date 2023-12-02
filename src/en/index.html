@@ -1,14 +1,14 @@
 ---
 title: Home
-description: We aim to be your trusted partner for economic feasibility studies.
+description: We aim to be your trusted partners and provide a clarity, direction, and a roadmap for your success.
 ---
 
 <header class='p-container home'>
     <section>
-        <h1> Welcome</h1>
-        {{ description }}
-        <a class="href-btn" href="/en/services">
-            Services
+        <h1> Welcome to Business Plan CM</h1>
+        <p>{{ description }}</p>
+        <a class="href-btn" style="background: transparent; border: 1px solid whitesmoke" href="/en/services">
+            more &rarr;
         </a>
     </section>
 </header>
@@ -17,40 +17,87 @@ description: We aim to be your trusted partner for economic feasibility studies.
     <h1>
         Welcome to Business Plan
     </h1>
-
-    <h2>What we do?</h2>
+    <h2>We help entrepreneurs and Businesses grow</h2>
     <p>
-        We specialize in helping educational, social, businesses and organizations make informed decisions by providing
-        accurate and reliable data analysis. Our team of experienced accountants, economists and analysts is dedicated to helping you achieve your goals in the best
-        possible way.
+        A well-prepared business plan is an indispensable tool for any entrepreneur or organization. It provides
+        clarity, direction, and a roadmap for success. Whether it's securing funding, making informed decisions, or
+        aligning stakeholders' efforts, a business
+        plan plays a vital role in achieving business objectives.
     </p>
 
-    <a class="href-btn" href="/en/services">
-        learn more...
-    </a>
-
-    <h2>
-        We measure risk factors for you.
-    </h2>
-
     <p>
-        Whether you're looking to start a new business, expand an existing one, or invest in a new project, we can help.
-        Our
-        services include:
+        Therefore, it is crucial for every entrepreneur to invest time and effort into developing a
+        comprehensive and dynamic business plan that adapts to the evolving needs of the market. To learn more
+        please visit our blog posts by clicking <a href="/">here &rarr;</a>
     </p>
 
-    <ol>
-        <li>Market Research,</li>
-        <li>Financial Analysis, </li>
-        <li>Risk Assessment, </li>
-        <li> <a href="/en/services">And more.</a></li>
-    </ol>
+    <section class="inter">
+        <img src="../assets/home.jpg" alt="" srcset="">
+        <div>
+            <h2>Why do you need a business plan</h2>
+            <p>
+                It provides a clear vision of where the business is heading and how it intends to get there. Let's
+                explore some key reasons why business plans are invaluable tools for entrepreneurs and organizations.
+            </p>
+            <p>
 
-    <p> With our help, you can be confident that you're making the right decisions for your business. Contact us today
-        to learn more about how we can help you achieve success.</p>
+            </p>
+            <p>Let us be your trusted partner in success. <a href="">learn more...</a></p>
+        </div>
+    </section>
+
+    <section class="inter">
+        <div>
+            <h2>What we do?</h2>
+            <p>
+                We specialize in helping educational, social, businesses and organizations make informed decisions by
+                providing accurate and reliable data analysis.
+            </p>
+            <p>
+                Our team of
+                experts is dedicated to assisting you in developing robust business plans and conducting thorough
+                economic feasibility studies. </p>
+            <ul>
+                <li>Business Plan Development</li>
+                <li>Economic Feasibility Studies</li>
+                <li>Financial Analysis</li>
+                <li>Market Research</li>
+            </ul>
+            <a class="href-btn" href="/{{ page.lang }}/services.html">
+                learn more
+            </a>
+        </div>
+
+        <img src="../assets/about.jpg" alt="" srcset="">
+    </section>
+
+
 
 </main>
 
 <style>
-    header {background: #0a0a1dcb url('../assets/home.jpg') no-repeat center;background-size: cover;}
+    header {
+        background: #0a0a1dcb url('../assets/home.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    .inter {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        align-self: center;
+    }
+
+    .inter img {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    @media (min-width: 768px) {
+        .inter {
+            grid-template-columns: repeat(2, minmax(320px, 420px));
+        }
+    }
 </style>

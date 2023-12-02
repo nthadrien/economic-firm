@@ -1,20 +1,18 @@
 ---
 title : About Us
-description: Our mission is to provide exceptional services to our clients and exceed their expectations. We aim to be the best in our field and continuously improve our services to meet the changing needs of our clients.
+description: Our mission is to provide exceptional services to our clients and exceed their expectations.
 permalink: /en/about-us.html
 ---
 <header class='p-container about'>
     <section>
         <h1>{{ title }}</h1>
-        <p>
-            {{ description }}
-        </p>
+        {{ description }}
     </section>
 </header>
 
 <main class="about p-container">
     <h1 class="l-f">About Us</h1>
-    <section>
+    <section class="inter">
         <h2>We help you make profits</h2>
         <p>
             Experiences proves that accurate data analysis is the key to making informed business decisions.
@@ -27,24 +25,31 @@ permalink: /en/about-us.html
         </p>
     </section>
 
-    <section class="asides">
-        <h2 class="l-f">How we operate?</h2>
-        <p>
-            We take a data-driven approach to every project, combining cutting-edge research techniques with real-world
-            experience
-            to provide our clients with the information they need to succeed. Whether you're looking to start a new
-            business, expand an existing one, or invest in a new project, we can help.
-        </p>
+    <section class="inter">
+        <img src="../assets/biz1.webp" alt="biz1" >
+        <div>
+            <h2 class="l-f">How we operate?</h2>
+            <p>
+                We take a data-driven approach to every project, combining cutting-edge research techniques with real-world
+                experience
+                to provide our clients with the information they need to succeed. Whether you're looking to start a new
+                business, expand an existing one, or invest in a new project, we can help.
+            </p>
+        </div>
+       
     </section>
 
-    <section class="asides">
+    <section class="inter">
         <p>
             Our services include market research, financial analysis, risk assessment, and more. We work closely with
             our clients to understand their unique needs and goals, and we provide customized solutions that are
             tailored to their specific situation.
             <br>
-            At Business Plan ltd, we are committed to providing our clients with accurate, reliable data analysis that they can trust.<br>
-            Our team is comprised of experienced professionals who are experts in their respective fields. We are dedicated to providing the highest level of service to our clients and are committed to continuous learning and improvement.
+            At Business Plan ltd, we are committed to providing our clients with accurate, reliable data analysis that
+            they can trust.<br>
+            Our team is comprised of experienced professionals who are experts in their respective fields. We are
+            dedicated to providing the highest level of service to our clients and are committed to continuous learning
+            and improvement.
         </p>
         <h2 class="l-f">Our Services</h2>
     </section>
@@ -52,32 +57,29 @@ permalink: /en/about-us.html
     <section>
         <h1 class="l-f">Clients</h1>
         <P>
-            We have had the pleasure of working with a diverse range of clients, including small businesses, ONGs, startups, and large corporations. Our clients come from various industries, including technology, healthcare, finance, and more.
+            We have had the pleasure of working with a diverse range of clients, including small businesses, ONGs,
+            startups, and large corporations. Our clients come from various industries, including technology,
+            healthcare, finance, and more.
         </P>
         <h2>Some Clients</h2>
         <ul>
             <li>OFSAD: </li>
-
             <li>Nthadrien Ltd.</li>
-
             <li>Genormi</li>
-
             <li>Les Marmitons</li>
         </ul>
-
     </section>
 
     <h2>
-        F.A.Q <br>
-        <small>(Frequently Asked Questions)</small>
+        F.A.Q <br> <small>(Frequently Asked Questions)</small>
     </h2>
-
 
     <div class="accordion">
         <h3>Why do I need a business plan?</h3>
         <p>
             A business plan is essential for any business venture, as it provides a roadmap for success. It outlines
-            your business strategy, marketing approach, operational processes, and financial projections. A well-structured
+            your business strategy, marketing approach, operational processes, and financial projections. A
+            well-structured
             and comprehensive business plan is crucial for attracting investors or securing financing.
         </p>
     </div>
@@ -106,7 +108,8 @@ permalink: /en/about-us.html
         <p>
             Financial projections are estimates of your business's future financial performance based on historical data
             and assumptions about future trends. They include revenue forecasts, expense projections, cash flow
-            analyses, and profitability estimates. Financial projections help you make informed decisions about your business
+            analyses, and profitability estimates. Financial projections help you make informed decisions about your
+            business
             strategy and secure funding from investors or financial institutions.
         </p>
     </div>
@@ -114,10 +117,13 @@ permalink: /en/about-us.html
 </main>
 
 <style>
-    header {background: #1d0a0acb url('../assets/about.jpg') no-repeat center;background-size: cover;}
-    h1,h2 {align-self: center;  text-align: center;}
-    .asides { display: grid; grid-template-columns: 1fr;}
-    @media (min-width: 468px) {
-        .asides { display: grid; grid-template-columns: repeat(2,1fr);}
+    header {
+        background: #0a0a1dcb url('../assets/about.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    h2 {
+        text-align: center;
+        width: 100%;
     }
 </style>

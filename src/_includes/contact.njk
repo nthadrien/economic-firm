@@ -1,7 +1,16 @@
+<section class="contact">
+    <div>
+        <h1>Contact</h1>
+        {%- if page.lang === 'en' -%}
+            <h3>Make the the right decisions for your business.</h3>
+            <p>Our team is available to answer any questions you may have and provide guidance on our services.</p>
+        {%- else -%}
+            <h3>Prenez les bonnes décisions pour votre entreprise.</h3>
+            <p>Notre équipe est disponible pour répondre à toutes vos questions et vous guider sur nos services.</p>
+        {%- endif -%}
+    </div>
 
-<section class="p-container">
     <form>
-        <h3>Contact</h3>
         <label>
             email
             <input type="email" name="email" placeholder="buz-mail-example@box.com" required="required"/>
@@ -9,14 +18,14 @@
 
         <label>
             message
-            <textarea style="padding: 5px 10px;" placeholder="Hi, we...." name="message" id="" cols="20" rows="2" required="required"></label>
+            <textarea style="padding: 5px 10px;" placeholder="Hi, we...." name="message" id="" cols="20" rows="4" required="required"></label>
 
             <button type="submit">
                 {%- if page.lang === 'en' -%}
                     Send Mail
                 {%- else -%}
-                    Evoyer le Mail
+                    Envoyer le Mail
                 {%- endif -%}
             </button>
         </form>
-</section>
+    </section>

@@ -1,8 +1,103 @@
 ---
 title: 'Accueil'
-description: 'This is the french version of the homepage'
+description: Nous visons à être vos partenaires de confiance et à vous fournir une clarté, une orientation et une feuille de route pour votre réussite.
 ---
 
-<main style="color:rebeccapurple" class="p-container">
-    <h1>Index page in french</h1>
+<header class='p-container home'>
+    <section>
+        <h1> Welcome to Business Plan CM</h1>
+        <p>{{ description }}</p>
+        <a class="href-btn" style="background: transparent; border: 1px solid whitesmoke" href="/en/services">
+            more &rarr;
+        </a>
+    </section>
+</header>
+
+<main class="p-container">
+    <h1>
+        Bienvenu(e) sur Business Plan
+    </h1>
+    <h2>We help entrepreneurs and Businesses grow</h2>
+    <p>
+        Un business plan bien préparé est un outil indispensable pour tout entrepreneur ou organisation. Il offre
+        clarté, orientation et feuille de route pour réussir. Qu'il s'agisse d'obtenir du financement, de prendre des décisions éclairées ou
+        aligner les efforts des parties prenantes, une entreprise
+        Le plan joue un rôle essentiel dans la réalisation des objectifs commerciaux.
+    </p>
+
+    <p>
+        Il est donc crucial pour chaque entrepreneur d’investir du temps et des efforts dans le développement d’un
+        plan d’affaires complet et dynamique qui s’adapte aux besoins évolutifs du marché. Pour apprendre plus
+        veuillez visiter nos articles de blog en cliquant <a href="/">ici &rarr;</a>
+    </p>
+
+    <section class="inter">
+        <img src="../assets/home.jpg" alt="" srcset="">
+        <div>
+            <h2>Why do you need a business plan</h2>
+            <p>
+                It provides a clear vision of where the business is heading and how it intends to get there. Let's
+                explore some key reasons why business plans are invaluable tools for entrepreneurs and organizations.
+            </p>
+            <p>
+
+            </p>
+            <p>Let us be your trusted partner in success. <a href="">learn more...</a></p>
+        </div>
+    </section>
+
+    <section class="inter">
+        <div>
+            <h2>What we do?</h2>
+            <p>
+                We specialize in helping educational, social, businesses and organizations make informed decisions by
+                providing accurate and reliable data analysis.
+            </p>
+            <p>
+                Our team of
+                experts is dedicated to assisting you in developing robust business plans and conducting thorough
+                economic feasibility studies. </p>
+            <ul>
+                <li>Business Plan Development</li>
+                <li>Economic Feasibility Studies</li>
+                <li>Financial Analysis</li>
+                <li>Market Research</li>
+            </ul>
+            <a class="href-btn" href="/{{ page.lang }}/services.html">
+                learn more
+            </a>
+        </div>
+
+        <img src="../assets/about.jpg" alt="" srcset="">
+    </section>
+
+
+
 </main>
+
+<style>
+    header {
+        background: #0a0a1dcb url('../assets/home.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    .inter {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        align-self: center;
+    }
+
+    .inter img {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    @media (min-width: 768px) {
+        .inter {
+            grid-template-columns: repeat(2, minmax(320px, 420px));
+        }
+    }
+</style>

@@ -5,42 +5,102 @@ permalink: /en/services.html
 ---
 
 <header class="p-container services">
-    <section>
-        <h1>{{ pic }}</h1>
-        <blockquote>
-            ''{{ description }}''
-        </blockquote>
-        <button>
-            {{ title }}
-        </button>
-    </section>
+    <h1>{{ pic }}</h1>
+    <blockquote>
+        ''{{ description }}''
+    </blockquote>
 </header>
 
 <main class="p-container">
 
     <h1>{{title}}</h1>
-    At Business Plan .ltd, we are committed to delivering high-quality services that empower our clients to make
-    informed
-    decisions and achieve their business objectives. Contact us today to discuss how we can support your economic
-    feasibility studies and business planning needs.
+    <h3>
+        Our team of experts is dedicated to providing customized solutions that meet your specific needs and goals. We
+        understand that every business is unique, and we work closely with our clients to deliver services that are
+        tailored to their requirements.
+    </h3>
 
-    Please note that this is a general example, and the actual content may vary depending on the specific services
-    offered by the firm.
+</main>
 
+<div class="services-list">
+    <h2 style="color: white; max-width: 640h2x; margin: auto;">
+        High-quality services that empower our clients to make informed decisions and achieve their business objectives.
+    </h2>
 
     <section class="card-container">
         {%- for service in collections.service -%}
         <div class="card">
-            <div class="card-hero">
-                <h4>{{ service.data.title }}</h4>
-            </div>
+            <div class="card-icon"></div>
+            <h4>{{ service.data.title }}</h4>
             <p>{{ service.data.bref }}</p>
-            <a class="href-btn" href="{{ service.url }}"> more ...</a>
+            <a class="btn" href="{{ service.url }}"> more &rarr; </a>
         </div>
         {%- endfor -%}
     </section>
+</div>
+
+
+
+<main class="p-container">
+    <h1> Other Services</h1>
+    <p>
+        In addition to our core services, we offer a range of other services to help businesses succeed. These include:
+    </p>
 </main>
 
 <style>
-    header {background: #1d0a0acb url('../../assets/services.jpg') no-repeat center;background-size: cover;}
+    header {
+        background: #0a0a1dcb url('../../assets/services.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    .services-list {
+        display: grid;
+        align-items: center;
+        gap: 2rem;
+        padding: 3rem 1rem;
+        background: #0a0a1daa url('../../assets/community.jpg') no-repeat center;
+        background-size: cover;
+        background-blend-mode: darken;
+        text-align: center;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 270px));
+        justify-content: space-evenly;
+        gap: 1.8rem;
+        width: 100%;
+    }
+
+    .card-icon {
+        background: var(--hvy-clr, rgb(53, 0, 128));
+        color: white;
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        min-height: 280px;
+        padding: 1em;
+        border-radius: 12px;
+        white-space: 1.2;
+        background: whitesmoke;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+
+    .card:nth-child(even) {
+        background: rgb(17, 101, 174);
+        color: whitesmoke;
+    }
+
+    .btn {
+        color: var(--brd-clr);
+        font-weight: bolder;
+    }
 </style>
