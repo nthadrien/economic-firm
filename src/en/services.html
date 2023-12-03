@@ -5,10 +5,11 @@ permalink: /en/services.html
 ---
 
 <header class="p-container services">
-    <h1>{{ pic }}</h1>
-    <blockquote>
+
+    <section>
+        <h1>{{ title }}</h1>
         ''{{ description }}''
-    </blockquote>
+    </section>
 </header>
 
 <main class="p-container">
@@ -30,7 +31,7 @@ permalink: /en/services.html
     <section class="card-container">
         {%- for service in collections.service -%}
         <div class="card">
-            <div class="card-icon"></div>
+            <div class="card-icon">{{ service.data.sign }}</div>
             <h4>{{ service.data.title }}</h4>
             <p>{{ service.data.bref }}</p>
             <a class="btn" href="{{ service.url }}"> more &rarr; </a>
@@ -67,18 +68,17 @@ permalink: /en/services.html
 
     .card-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 270px));
+        grid-template-columns: repeat(auto-fit, minmax(120px, 300px));
         justify-content: space-evenly;
-        gap: 1.8rem;
+        gap: 2rem;
         width: 100%;
     }
 
     .card-icon {
-        background: var(--hvy-clr, rgb(53, 0, 128));
-        color: white;
         border-radius: 50%;
         height: 70px;
         width: 70px;
+        font-size: 3rem;
     }
 
     .card {
@@ -92,10 +92,17 @@ permalink: /en/services.html
         white-space: 1.2;
         background: whitesmoke;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        transform: translateY(220%);
+        opacity: 0;
+
     }
 
     .card:nth-child(even) {
-        background: rgb(17, 101, 174);
+        background: var(--sup-clr);
+        color: whitesmoke;
+    }
+
+    .card:nth-child(even) .btn {
         color: whitesmoke;
     }
 

@@ -4,7 +4,7 @@
 
     <button id="hamburger">
         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewbox="0 0 24 24">
-            <path fill="currentColor" d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/>
+            <path fill="lightgray" d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/>
         </svg>
     </button>
 
@@ -19,12 +19,11 @@
         {% endfor %}
     </div>
 
-    <div>
+    <div style="color:white;">
         <a href="{{ page.url|url }}" lang="{{ page.lang }}" hreflang="{{ page.lang }}">
             {{ page.lang | capitalize }}
         </a>
         |
-
         {% for link in page.url | locale_links %}
             <a href="{{ link.url | url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">
                 {{ link.lang | capitalize }}</a>

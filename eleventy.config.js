@@ -13,6 +13,10 @@ module.exports = function (eleventyConfig) {
     defaultLanguage: "fr"
   });
 
+  eleventyConfig.addFilter("filterLinksByLanguage", function(collection, language) {
+    return collection.filter(item => item.data.lang === language);
+  });
+
   return {
     dir: {
       input: 'src',

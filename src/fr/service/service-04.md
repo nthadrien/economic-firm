@@ -1,7 +1,7 @@
 ---
 title: Financial Analysis and Projections
 bref: Our financial experts analyze your financial data, including revenue.
-permalink: /en/service/financial-analysis.html
+permalink: /fr/service/financial-analysis.html
 sign: ⚖
 ---
 

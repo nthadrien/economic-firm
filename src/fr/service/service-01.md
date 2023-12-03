@@ -2,7 +2,7 @@
 title: Economic Feasibility Studies
 bref : Our feasibility studies provide you with valuable insights to make informed decisions.
 tags: service
-permalink: /en/service/economic-feasibility.html
+permalink: /fr/service/economic-feasibility.html
 sign: ✔
 ---
 
