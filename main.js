@@ -9,36 +9,32 @@ window.onload = () => {
         btn.classList.toggle('open');
     });
 
-    let options = {
+    let observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                entry.target.classList.toggle("animate", entry.isIntersecting);
+                if (entry.isIntersecting) observer.unobserve(entry.target);
+            })
+        }, {
         rootMargin: window.innerWidth > 768 ? "-200px" : "-100px",
-    };
-
-    let options2 = {
-        rootMargin: "-50px",
-    };
-
-    let callback = (entries, observer) => {
-        entries.forEach((entry) => {
-            entry.target.classList.toggle("animate", entry.isIntersecting );
-            if ( entry.isIntersecting ) observer.unobserve(entry.target);
-        });
-    };
-
-    let callback2 = (entries, observer) => {
-        entries.forEach((entry) => {
-            entry.target.classList.toggle("glow", entry.isIntersecting );
-            if ( entry.isIntersecting ) observer.unobserve(entry.target);
-        });
-    };
-
-    let observer = new IntersectionObserver(callback, options);
-    let observer2 = new IntersectionObserver(callback2, options2);
-
-    boxes.forEach( card => {
-        observer.observe( card );
     });
 
-    cards.forEach( card => {
-        observer2.observe( card );
+    let observer2 = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                entry.target.classList.toggle("glow", entry.isIntersecting);
+                if (entry.isIntersecting) observer.unobserve(entry.target);
+            })
+        }, {
+            rootMargin: "300px",
+        }
+    );
+
+    boxes.forEach(box => {
+        observer.observe(box);
+    });
+
+    cards.forEach(card => {
+        observer2.observe(card);
     });
 };

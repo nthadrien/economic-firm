@@ -435,10 +435,9 @@ hr {
 
 .glow {
     animation-name: switch;
-    animation-duration: 1.6s;
+    animation-duration: 1.2s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
-    animation-delay: 0.4s;
 }
 
 @keyframes switch {

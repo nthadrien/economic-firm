@@ -24,12 +24,12 @@ permalink: /en/services.html
 </main>
 
 <div class="services-list">
-    <h2 style="color: white; max-width: 640h2x; margin: auto;">
+    <h2 style="color: white; max-width: 640h2x; margin: auto;" class="inter">
         High-quality services that empower our clients to make informed decisions and achieve their business objectives.
     </h2>
 
     <section class="card-container">
-        {%- for service in collections.service -%}
+        {%- for service in collections.service | filterLinksByLanguage(page.lang) -%}
         <div class="card">
             <div class="card-icon">{{ service.data.sign }}</div>
             <h4>{{ service.data.title }}</h4>
